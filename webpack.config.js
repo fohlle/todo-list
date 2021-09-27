@@ -6,7 +6,9 @@ module.exports = {
   devtool: 'inline-source-map',
   entry: {
     index: "./src/index.js",
-    test: "./src/test.js"
+    test: "./src/test.js",
+    dom: "./src/dom.js",
+    events: "./src/events.js"
   },
   output: {
     filename: "[name].bundle.js",

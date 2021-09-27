@@ -10,8 +10,31 @@
 <body>
 
   
-  <h1>Testing</h1>
+  <div class="wrapper">
 
+    <aside class="projects_c">
+      <div id="pro">
+        <h2>Projects:</h2>
+        <form>
+          <label>
+            <input id="new_pro" type="text" placeholder="project name" required>
+            <button id="btn_pro" type="submit">New</button>
+          </label>
+        </form>
+      </div>
+      <ul class="project_ul">
+        <li class="project">
+          <h3>Default:</h3>
+          <button class="btn_todo">Add Todo</button>
+        </li>
+        
+      </ul>
+      
+    </aside>
+
+  </div>
+  <script src="events.bundle.js"></script>
+  <script src="dom.bundle.js"></script>
   <script src="test.bundle.js"></script>
   <script src="index.bundle.js"></script>
 </body>

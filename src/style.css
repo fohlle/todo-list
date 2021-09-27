@@ -1,5 +1,86 @@
 
-h1{
-  color:red;
-  font-size: 40px;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
+html,body{
+  height:100%;
+}
+
+/* WRAPPER */
+.wrapper{
+  height:100vh;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.2),rgba(248, 248, 74, 0.3));
+  border-right:black solid 4px;
+  border-left:black solid 4px;
+  width:80vw;
+  margin: 0 auto;
+  display:flex;
+  align-items: center;
+  position: relative;
+}
+/* PROJECTS */
+.projects_c{
+  border:black solid 1px;
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  display:flex;
+  flex-direction: column;
+  padding:20px;
+}
+.project{
+  border-bottom:black dotted 2px;
+  margin:30px 0;
+  display:flex;
+  justify-content: space-between;
+  padding:10px 0;
+}
+.project button{
+  font-size: 24px;
+  padding:5px 20px;
+  background: none;
+  border-radius: 10px;
+
+}
+.project li{
+  display:flex;
+  justify-content: center;
+}
+.project :first-child{
+  font-size: 34px;
+}
+#pro{
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+#pro input{
+  font-size: 32px;
+  padding:10px 0;
+}
+#pro button{
+  font-size: 1em;
+  padding:10px 20px;
+  background: none;
+  border-radius: 10px;
+}
+.todo{
+  margin:40px 0;
+  display:flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.todo h4{
+  font-size: 34px;
+  cursor: pointer;
+}
+.todo p{
+  font-size: 24px;
+}
+/*  */
+
+/*  */
