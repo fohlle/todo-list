@@ -3,19 +3,22 @@ function test(){
   console.log("what testing")
 }
 
+const todoArray = () =>{
+  let array = [];
+  const addArray = (arr) => array.push(arr);
+  const getArray = () => array;
+  return { addArray, getArray};
+}
+
 const list = (title,description,due,priority) => {
 
   let notes = "";
-  let check = false;
-  
   const todo = () => {
-    return { title, description, due, priority, notes, check};
+    return { title, description, due, priority, notes};
   }
-
   const setNotes = (note) => notes = note;
-  const setCheck = () => check = true;
 
-  return { todo, setNotes, setCheck};
+  return { todo, setNotes};
 }
 
 function listConst(title,desc){
@@ -44,4 +47,4 @@ class listClass{
    }
 }
 
-export  { test, list, listConst, listClass };
+export  { test, list, listConst, listClass, todoArray };

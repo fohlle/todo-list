@@ -23,7 +23,7 @@
         </form>
       </div>
       <ul class="project_ul">
-        <li class="project">
+        <li class="project" id="default">
           <h3>Default:</h3>
           <button class="btn_todo">Add Todo</button>
         </li>
@@ -32,7 +32,40 @@
       
     </aside>
 
+    <div class="show">
+      <h2>Todo:</h3>
+      <div class="show_todo">
+        <ul >
+          <li class="showTodoLi" id="title">Title:</li>
+          <li class="showTodoLi" id="due">Due:</li>
+          <li class="showTodoLi" id="desc">Description:</li>
+          <li class="showTodoLi" id="prio">Priority:</li>
+          <li class="showTodoLi" id="notes">Notes:</li>
+        </ul>
+      </div>
+    </div>
+
+    <article class="todo_c">
+      <form class="todo_f">
+        <label>Title
+          <input class="form_input" type="text" id="title">
+        </label>
+        <label>Description
+          <input class="form_input" type="text" id="description">
+        </label>
+        <label>Due
+          <input class="form_input" type="date" id="due">
+        </label>
+        <label>Priority
+          <input class="form_input" type="text" id="priority">
+        </label>
+        <button id="todo_form_btn">Create</button>
+      </form>
+    </article>
+
   </div>
+
+
   <script src="events.bundle.js"></script>
   <script src="dom.bundle.js"></script>
   <script src="test.bundle.js"></script>
