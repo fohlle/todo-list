@@ -1,140 +1,144 @@
-
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
 }
-html{
-  height:100%;
+html {
+  height: 100%;
 }
-body{
-  height:100%;
+body {
+  height: 100%;
 }
 
 /* WRAPPER */
-.wrapper{
-  height:100%;
-  background-image: linear-gradient(rgba(255, 0, 0, 0.2),rgba(248, 248, 74, 0.3));
-  border-right:black solid 4px;
-  border-left:black solid 4px;
-  width:80vw;
+.wrapper {
+  height: 100%;
+  background-image: linear-gradient(
+    rgba(255, 0, 0, 0.2),
+    rgba(248, 248, 74, 0.3)
+  );
+  border-right: black solid 4px;
+  border-left: black solid 4px;
+  width: 80vw;
   margin: 0 auto;
-  display:flex;
+  display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
 }
 /* PROJECTS */
-.projects_c{
-  border:black solid 1px;
-  position:absolute;
-  left:0;
-  top:0;
-  bottom:0;
-  display:flex;
+.projects_c {
+  border: black solid 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
   flex-direction: column;
-  padding:20px;
+  padding: 20px;
 }
-.project{
-  border-bottom:black dotted 2px;
-  margin:30px 0;
-  display:flex;
+.project {
+  border-bottom: black dotted 2px;
+  margin: 30px 0;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding:10px 0;
+  padding: 10px 0;
 }
-.project button, button{
+.project button,
+button {
   font-size: 24px;
-  padding:5px 20px;
+  padding: 5px 20px;
   background: none;
   border-radius: 10px;
-  order:2;
-  height:2em;
+  order: 2;
+  height: 2em;
   align-self: center;
 }
-.project_ul{
-  height:100%;
+.project_ul {
+  height: 100%;
 }
-.project li{
-  display:flex;
+.project li {
+  display: flex;
   justify-content: center;
 }
-.project :first-child{
+.project :first-child {
   font-size: 34px;
 }
-#pro{
+#pro {
   font-size: 40px;
   margin-bottom: 40px;
 }
-#pro input{
+#pro input {
   font-size: 32px;
-  padding:10px 0;
+  padding: 10px 0;
 }
-#pro button{
+#pro button {
   font-size: 1em;
-  padding:10px 20px;
+  padding: 10px 20px;
   background: none;
   border-radius: 10px;
 }
-.todo{
-  margin:10px 0;
-  display:flex;
+.todo {
+  margin: 10px 0;
+  display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.todo h4{
+.todo h4 {
   font-size: 34px;
   cursor: pointer;
 }
-.todo p{
+.todo p {
   font-size: 24px;
 }
 /* TODO FORM */
-.todo_c{
-  border:black solid 1px;
-  margin-left:40%;
+.todo_c {
+  border: black solid 1px;
+  margin-left: 40%;
   background-color: rgba(65, 5, 5, 0.2);
-  position:absolute;
+  position: absolute;
   visibility: hidden;
 }
-.todo_f{
-  display:flex;
+.todo_f {
+  display: flex;
   flex-direction: column;
-  padding:160px;
+  padding: 160px;
 }
-.todo_f label,.todo_f input{
+.todo_f label,
+.todo_f input {
   font-size: 30px;
 }
-.todo_f label{
-  display:flex;
+.todo_f label {
+  display: flex;
   justify-content: space-between;
 }
-.todo_f input{
-  margin:0 20px;
+.todo_f input {
+  margin: 0 20px;
 }
 /* SHOW */
-.show{
-  border:black solid 1px;
-  height:400px;
-  width:40%;
-  display:flex;
+.show {
+  border: black solid 1px;
+  height: 400px;
+  width: 40%;
+  display: flex;
   align-self: flex-start;
-  margin-left:30%;
+  margin-left: 30%;
   flex-direction: column;
 }
-.show h2{
+.show h2 {
   font-size: 38px;
 }
-.show ul{
-  padding:20px;
+.show ul {
+  padding: 20px;
 }
-.show ul li{
-  padding:5px;
+.show ul li {
+  padding: 5px;
   font-size: 28px;
 }
-.show ul li p{
+.show ul li p {
   font-size: 22px;
   text-align: center;
 }

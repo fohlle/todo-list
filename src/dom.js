@@ -1,10 +1,10 @@
-import { todoBtn,showTodo } from "./events.js"
+import { todoBtn, showTodo } from "./events.js";
 
-function newProject(string){
+function newProject(string) {
   const li = document.createElement("li");
   const h3 = document.createElement("h3");
   const btn = document.createElement("button");
-  btn.className ="btn_todo";
+  btn.className = "btn_todo";
   btn.innerText = "Add Todo";
   li.className = "project";
   li.id = string;
@@ -15,7 +15,7 @@ function newProject(string){
   return li;
 }
 
-function newTodo(title){
+function newTodo(title) {
   const div = document.createElement("div");
   const h4 = document.createElement("h4");
 
@@ -26,7 +26,7 @@ function newTodo(title){
   return div;
 }
 
-function domTodo(object){
+function domTodo(object) {
   const title = document.getElementById("title");
   const due = document.getElementById("due");
   const desc = document.getElementById("desc");
@@ -34,11 +34,11 @@ function domTodo(object){
   const notes = document.getElementById("notes");
 
   const list = [...document.querySelectorAll(".showTodoLi")];
-  list.forEach(node => {
-    if(node.hasChildNodes()){
+  list.forEach((node) => {
+    if (node.hasChildNodes()) {
       node.removeChild(node.firstChild);
     }
-  })
+  });
 
   const p1 = document.createElement("p");
   p1.innerText = object["title"];
@@ -50,7 +50,7 @@ function domTodo(object){
   p4.innerText = object["priority"];
   const p5 = document.createElement("p");
   p5.innerText = object["notes"];
-  
+
   title.appendChild(p1);
   due.appendChild(p2);
   desc.appendChild(p3);
